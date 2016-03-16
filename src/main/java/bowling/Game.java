@@ -7,9 +7,9 @@ import bowling.exception.InvalidGameException;
  */
 public class Game
 {
-    private final Turn[] mTurns;
+    private final ITurn[] mTurns;
 
-    public Game(Turn[] turns) throws InvalidGameException
+    public Game(ITurn[] turns) throws InvalidGameException
     {
         if(turns.length != 10)
             throw new InvalidGameException();
@@ -18,10 +18,11 @@ public class Game
 
     public int getScore()
     {
-        for(Turn turn : mTurns)
+        for(ITurn turn : mTurns)
         {
 
         }
+        return 0;
     }
 
 }
