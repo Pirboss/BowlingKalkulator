@@ -31,6 +31,6 @@ public class Turn implements ITurn
 
     public int getScore()
     {
-        return 0;
+        return mFirstScore+mSecondScore;
     }
 }
